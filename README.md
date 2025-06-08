@@ -56,7 +56,7 @@ Welcome to the **Premier Model Management** project — a sleek, modern, and res
 ├─ arrow.png # Supporting graphical asset
 └─ gif use in website.gif # Additional media element
 
-
+---
 
 Thank you for exploring the Premier Model Management website –  
 where fashion meets cutting-edge web design. 🌟🚀
