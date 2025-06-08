@@ -1,0 +1,621 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #F8F8F8;
+    position: relative;
+    padding-top: 0.1px;
+}
+#nav{
+    height: 15vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 40px; 
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+    /* background-color: yellow; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    font-size: 50px;
+    letter-spacing: -1px;
+    position: relative;
+}
+#nav h1::after{
+    content: "©️";
+    font-size: 1vw;
+    font-weight: 100;
+    top: 5.1vh;
+    right: 2.8vw;
+    position: absolute;
+    
+}
+#nav h1::before{
+    content: "Model management";
+    font-size: 1vw;
+    bottom: 2.4vh;
+    left: 7.5vw;
+    font-weight: 100;
+    position: absolute;
+    
+}
+#nav h2{
+    /* background-color: yellow; */
+    height: 100%;
+    width: 22%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 25px;
+    font-weight: 600;
+}
+#nav h3{
+    display: none;
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+#nav h2:nth-last-child(2){
+    width: 29%;
+}
+#center{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding: 4vw; 
+}
+#content{
+   height: 80%;
+   width: 100%;
+   /* background-color: blue; */
+   position: relative;
+}
+#content video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 52%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    padding: 1.5vw;
+    color: white; 
+    /* backdrop-filter: blur(10px); */
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#over1 h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 3.6vw;
+    margin-bottom: 1vw;
+    /* mix-blend-mode:difference; */
+}
+#over1 h2{
+    font-size: 1vw;
+    padding: 2vw 2.2vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 1px solid white;
+    border-bottom: 5px solid white;
+}
+#over2{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    border-top: 2px solid white;
+    padding: 3vw 0;
+}
+#over2 h4{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+/* #over2 img{
+    height: 1vw;
+} */
+#scroll{
+    margin-top: -7vw;
+    height: 40vh;
+    width: 100%; 
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden ;
+    overflow-y: hidden;
+
+}
+#container{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    height: 70%;
+    border-radius: 50%;
+    width: 10%;
+    object-fit: cover;
+    margin: 0.60vw;
+}
+@keyframes anime {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#alphabet{
+    height: 11vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#alphabet h5{
+    font-size: 2vw;
+    font-style: italic;
+    font-weight: 400;
+    border-bottom: 2px solid black;
+    letter-spacing: 4px;
+    margin-right: 2vw;
+}
+#alphabet h6{
+    font-size: 1vw;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 4px;
+    padding: 0.5vw 0.7vw;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all ease 0.1s;
+}
+#alphabet h6:hover{
+    border-bottom: 2px solid black;
+    background-color: rgb(232, 244, 242);
+}
+#page2{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 7vw;
+}
+#page2-part1{
+    height: 100%;
+    width: 60%;
+    background-size: cover;
+    margin-left: 5vw;
+}
+#page2-part1 img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    object-position: top;
+}
+#page2-part2{
+    height: 100%;
+    width: 40%;
+}
+#page2-part2 img{
+    width: 100%;
+    height: 62%;
+    object-fit: cover;
+}
+#page2-part1 pre{
+    margin-top: 3vh;
+    font-family:sans-serif;
+    -webkit-text-stroke: 1px black;
+    font-size: 3vw;
+    letter-spacing: -0.3vw;
+}
+#para{
+    /* background-color: rgb(214, 198, 198); */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    margin-top: 3vh;
+}
+#para h3{
+    /* background-color: blue; */
+    width: 70%;
+    height: 1vh;
+    font-weight: 550;
+    letter-spacing: -0.02vw;
+}
+#para h4{
+    /* background-color: blue; */
+    width: 50%;
+    height: 1vh;
+    font-weight: 540;
+    letter-spacing: -0.02vw;
+}
+#page3{
+    /* background-color: blue; */
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 4vw;
+}
+#round img{
+    margin-top: 30vh;
+    margin-left: 30vw;
+    width: 40%;
+    height: auto;
+    animation: round 5s linear infinite;
+}
+#round-center img{
+    width: 7vw;
+    height: auto;
+    margin-top: 23vh;
+    margin-left: -24vw;
+}
+#page3-right{
+    margin-right: 10vw;
+}
+#page3-right img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes round {
+    from{
+        transform: translate(-50%,-50%)rotate(0deg);
+    }    
+    to{
+        transform: translate(-50%,-50%)rotate(-360deg);
+
+    }
+}
+#round h3{
+    margin-left: 21vw;
+}
+#page4{
+    width: 100%;
+    height: 100%;
+    padding: 10vw;
+}
+#page4 img{
+    width: 100%;
+    height: 100%;
+    object-position: top;
+    object-fit: cover;
+}
+#page5{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+}
+#page5>h1{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 900;  
+    margin-bottom: 7vh;
+}
+.elem{
+    height: 15vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 5vw 5vw;
+    position: relative;
+}
+.elem img{
+    width: 9vw;
+    height: 17vh;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 5px 5px 5px 5px rgb(206, 188, 188);
+    position: absolute;
+    left: 12%;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.elem:nth-last-child(1) img{
+    left: 40%;
+}
+.elem:nth-last-child(3) img{
+    left: 40%;
+}
+.elem:hover{
+    background-color:#F8F8F8;
+}
+.elem:hover img{
+    opacity: 1;
+    left: 24%;
+}
+.elem h4{
+    font-size: 1.5vw;
+    font-weight: 500;
+    /* background-color: red; */
+}
+.elem .elem-part2 h1{
+    font-size: 3vw;
+    font-weight: 530;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+#page6 {
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    justify-content: space-between;
+    padding: 6% 10%;
+    display: flex;
+    
+}
+#page6 #left img{
+    height: 80vh;
+    width: 30vw;
+    object-fit: cover;
+    box-shadow: -5px 5px 5px 5px rgb(145, 133, 133);
+}
+#page6 #right{
+    /* background-color: yellow; */
+    width: 55%;
+}
+#page6 #right img{
+    height: 40.1vh;
+    width: 20vw;
+    object-fit: cover;
+    margin-top: 3vh;
+    margin-right: 1vw;
+}
+#page6 #right h1{
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#page6 #right h2{
+    /* background-color: red; */
+    width: 45%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-weight: 540;
+}
+#page6 #right h4{
+    font-weight: 100;
+}
+#page7{
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 6vh;
+    padding: 2vw 7vw;
+}
+#page7 #left img{
+    height: 95vh;
+    width: 45vw;
+    object-fit: cover;
+}
+#page7 #right img{
+    height: 68vh;
+    width: 38vw;
+    object-fit: cover;
+}
+#page7 #right #text{
+    margin-top: 2vh;
+    display: flex;
+    gap: 8vw;
+}
+#page7 #right #text h2{
+   word-spacing: 0.4vw;
+   font-weight: 600;
+    line-height: 4.2vh;
+}
+#page7 #right #text h4{
+    word-spacing: 0.6vw;
+    font-weight: 550;
+ }
+ #marque {
+    /* background-color: red; */
+    /* height: 15vh; */
+    width: 100%;
+    margin-top: 20vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0.5vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+ }
+ #marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: monument;
+    letter-spacing: 2px;
+    margin-right: 20px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    letter-spacing: 7px;
+ }
+ @keyframes move {
+    form{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px)); 
+    }
+    
+} 
+
+@media (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
+    #nav{
+        height: 8vh;
+        margin-top: 4vh; 
+        padding: 0 5vw;
+    }
+    #nav h1{
+        width: 40%;
+        justify-content: flex-start;
+        font-size: 24px;
+    }
+    #nav h3{
+        display: block;
+    }
+    #nav h1::after{
+        /* content: "©️"; */
+        display: none;
+       
+        
+    }
+    #nav h1::before{
+        /* content: "Model management"; */
+        display: none;
+       
+        
+    }
+    #nav h2{
+        display: none;
+    }
+
+    #center{
+        height: 50%;
+        width: 100%;
+        /* background-color: red; */
+        position: relative;
+        padding: 4vw; 
+    }
+    #content{
+        height: 80%;
+        width: 100%;
+        /* background-color: blue; */
+        position: relative;
+     }
+     #content video{
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+     }
+     #overlay{
+         height: fit-content;
+         width: 100%;
+         position: absolute;
+         bottom: 0;
+         /* background-color: red; */
+         padding: 1.5vw;
+         color: white; 
+         /* backdrop-filter: blur(10px); */
+     }
+     #over1{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+     }
+     #over1 h1{
+         font-family: 'Courier New', Courier, monospace;
+         font-weight: 100;
+         font-size: 5.5vw;
+         margin-bottom: 1vw;
+         /* mix-blend-mode:difference; */
+     }
+     #over1 h2{
+         font-size: 2vw;
+         padding: 3vw 3.2vw;
+         /* background-color: blue; */
+         border-radius: 50%;
+         border: 1px solid white;
+         border-bottom: 5px solid white;
+     }
+     #over2{
+         display: flex;
+         align-items: center;
+         /* justify-content: space-between; */
+         border-top: 2px solid white;
+         padding: 3vw 0;
+     }
+     #over2 h4{
+         font-size: 3vw;
+         font-weight: 500;
+     }
+     #over2 img{
+         height: 5vw;
+     }
+     #scroll {
+        margin-top: -17vw;
+        height: 10vh;
+        width: 100%;
+        /* background-color: red; */
+        white-space: nowrap;
+        overflow-x: hidden ;
+        overflow-y: hidden;
+    }
+    #container{
+        height: 100%;
+        width: 100%;
+        /* background-color: blue; */
+        display: inline-block;
+        margin-right: 20px;
+    animation-timing-function: linear;
+
+        padding: 2vw;
+        animation-name: anime;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes anime {
+        from{
+            transform: translate(0);
+        }
+        to{
+            transform: translateX(calc(-100% - 22px));
+        }
+    }
+    #scroll img{
+        height: 70%;
+        border-radius: 50%;
+        width: 10%;
+        object-fit: cover;
+        margin: 0.60vw;
+    }
+}
